@@ -5,7 +5,7 @@ A simple, customizable wildfire cellular automaton. Each grid cell is one of:
 Optionally, fuel is typed (Grass=1, Shrub=2, Timber=3, Water=4) with different ignition and burn behavior.
 Terrain/wind/fuel-load can bias spread.
 
-<img src="gifs/demo.gif" alt="Wildfire simulation" width="600">
+<img src="gifs/demo.gif" alt="Wildfire simulation" width="300">
 
 
 ## Quick start
@@ -165,4 +165,5 @@ Enable `USE_FUEL_LOAD`, raise `LOCAL_FUEL_WEIGHT`, and tune `CONSUME_PER_STEP`.
 _Water is a distinct type (4) for coloring/stats but remains non-burnable (state set to 0)._
 
 _If the fire won’t grow, check: ignition isn’t on water, K_NEIGHBORS not too strict, WIND_STRENGTH reasonable, fuel-load damping/consumption not excessive, and map resolution is not too small._
+
 
