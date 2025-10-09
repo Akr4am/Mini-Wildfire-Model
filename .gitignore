@@ -213,7 +213,7 @@ __marimo__/
 #Outputs
 gifs/
 *.gif
-
+.env
 #Data / rasters
 data/
 !data/.gitkeep
