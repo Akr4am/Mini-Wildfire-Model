@@ -42,7 +42,7 @@
  
  
  
- ## What to tweak
+ ## What to change
  
  ### Grid & runtime
  
@@ -115,10 +115,7 @@
    - local remaining fuel (if finite fuel is on)
  - Add wind-biased “pressure” from burning neighbors to form `nburn_eff`.  
  - Convert to ignition probability:
- 
-   ```
-   p_ignite = 1 - (1 - p0_eff)^(nburn_eff)
-   ```
+ `p_ignite = 1 - (1 - p0_eff)^(nburn_eff)`
  
  - Cells that pass ignite → **BURNING (2)**.  
  - Burning cells persist with probability `sustain_p`; otherwise → **BURNED (3)**.  
@@ -126,7 +123,7 @@
  
  
  
- ## Agents (optional)
+ ## Agents 
  
  Agents are pixels that move and act each tick. Each has:
  - a **type** (`AgentType`) and a rule profile (`RULES`) that sets *speed, action range, suppression, extinguish chance, cooldown deposition, decay, payload, cadence*, etc.  
