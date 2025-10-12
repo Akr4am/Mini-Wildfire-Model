@@ -23,7 +23,7 @@
  pip install numpy matplotlib pillow rasterio terracatalogueclient shapely requests python-dotenv imageio
  
  ### 2) (Optional) Put OPENTOPO_API_KEY in your environment or a .env file
- Needed only if AUTO_FETCH_DATA is True.
+ Needed only if `AUTO_FETCH_DATA` is True.
  
  ### 3a) Run the base model
  python mini_fire_model.py
